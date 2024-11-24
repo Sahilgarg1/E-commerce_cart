@@ -55,7 +55,7 @@ app.get('/shipping-cost', (req, res) => {
   res.send(shippingCost.toString());
 })
 
-app.get('/loyality-points', (req, res) => {
+app.get('/loyalty-points', (req, res) => {
   let purchaseAmount = parseFloat(req.query.purchaseAmount);
   let loyalityPoints = purchaseAmount * 2;
   res.send(loyalityPoints.toString());
